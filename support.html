@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#faf9f6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f0f11" media="(prefers-color-scheme: dark)" />
+    <title>Support - SolTCG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      /* Same tokens as src/styles.css, so the pages and the app agree. */
+      :root {
+        color-scheme: light;
+        --bg: #faf9f6;
+        --surface: #ffffff;
+        --ink: #121213;
+        --muted: #5f5f62;
+        --line: #e5e3de;
+        --accent: #e23a2e;
+        --accent-text: #c02a20;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color-scheme: dark;
+          --bg: #0f0f11;
+          --surface: #17171a;
+          --ink: #f4f4f6;
+          --muted: #9b9ba3;
+          --line: #2a2a30;
+          --accent: #e23a2e;
+          --accent-text: #ff7a6e;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: 'Alexandria', system-ui, -apple-system, 'Segoe UI', sans-serif;
+        font-size: 15px;
+        line-height: 1.65;
+        -webkit-text-size-adjust: 100%;
+      }
+      main {
+        width: min(100%, 620px);
+        margin-inline: auto;
+        padding: 26px 20px calc(44px + env(safe-area-inset-bottom));
+      }
+      .kicker {
+        text-transform: uppercase;
+        letter-spacing: .07em;
+        font-size: 10px;
+        font-weight: 600;
+        color: var(--accent-text);
+        margin: 0;
+      }
+      h1 { font-size: 24px; line-height: 1.2; letter-spacing: -.03em; margin: 6px 0 10px; }
+      h2 { font-size: 15px; letter-spacing: -.01em; margin: 26px 0 6px; }
+      p { margin: 0 0 8px; }
+      .lede { color: var(--muted); font-size: 13.5px; }
+      ol { margin: 6px 0; padding-inline-start: 20px; }
+      li { margin-block-end: 4px; }
+      a { color: var(--accent-text); }
+      .contact {
+        margin-block: 18px 4px;
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        background: var(--surface);
+      }
+      .contact a { font-size: 16px; font-weight: 600; overflow-wrap: anywhere; }
+      .contact p { color: var(--muted); font-size: 12.5px; margin-block-end: 0; }
+      .updated { color: var(--muted); font-size: 12px; margin-block-start: 34px; padding-block-start: 14px; border-block-start: 1px solid var(--line); }
+      .back { display: inline-block; margin-block-start: 22px; font-size: 13px; font-weight: 600; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="kicker">SolTCG</p>
+      <h1>Support</h1>
+      <p class="lede">How to reach us, how to report something, and how to delete your account.</p>
+
+      <div class="contact">
+        <a href="mailto:abdulelah.bahashwan@gmail.com?subject=SolTCG%20support">abdulelah.bahashwan@gmail.com</a>
+        <p>Email is the way to reach us. Say what happened and, if it is about a listing, which listing. We do not promise a reply time.</p>
+      </div>
+
+      <h2>Report a listing or a person</h2>
+      <p>Reports are filed from a conversation in the app, and they go to the staff review queue. Reporting needs a signed-in account.</p>
+      <ol>
+        <li>Open the listing and tap <strong>Message</strong> to start a conversation with the seller.</li>
+        <li>In the conversation, tap the flag at the top.</li>
+        <li>Choose a reason, add anything that helps staff review it, and send the report.</li>
+      </ol>
+
+      <h2>Block someone</h2>
+      <p>The same conversation header has a block button. A blocked account cannot message you. Tap the same button again to unblock.</p>
+
+      <h2>Delete your account</h2>
+      <ol>
+        <li>Open your profile and then <strong>Settings</strong>.</li>
+        <li>Tap <strong>Delete account</strong>, and type your username to confirm.</li>
+      </ol>
+      <p>Deletion is permanent and removes your account and its personal data, including your listings and their photos and your messages. The <a href="privacy.html">privacy policy</a> lists exactly what is removed and the one moderation record that is kept without your account attached to it.</p>
+      <p>If deleting inside the app fails, email us and say so.</p>
+
+      <p class="updated">Last updated 16 September 2026.</p>
+      <a class="back" href="./">Back to SolTCG</a>
+    </main>
+  </body>
+</html>
